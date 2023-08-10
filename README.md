@@ -1,0 +1,2 @@
+# manufactura
+Pagina estatica
