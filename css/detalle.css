@@ -1,0 +1,117 @@
+.contenidoDetalle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(180deg,#4ba9e9,#4ba9e9 50%,#fff 50%,#fff 100%);
+}
+
+.cardDetalle{
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: #fff;
+    box-shadow: 0 15px 45px rgba(0,0,0,0.25);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cardDetalle:hover{
+    width: 600px;
+}
+
+.cardDetalle .imgBox{
+    position: relative;
+    min-width: 300px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.cardDetalle:hover .imgBox{
+    transform: rotate(-35deg);
+}
+
+.cardDetalle img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.cardDetalle .details{
+    position:relative;
+    min-width: 300px;
+    background: #4ba9e9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    color: #000;
+    font-weight: bold;
+}
+
+.cardDetalle .details::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-left: 10px solid #fff;
+}
+.cardDetalle .details li,.cardDetalle .details h2,.cardDetalle .details h3,.cardDetalle .details h4{
+    font-size: 1.2em;
+}
+
+.cardDetalle .details p{
+    font-size: 0.7em;
+}
+
+.cardDetalle .details .colorsSet ul{
+display: flex;
+width: 100%;
+justify-content: space-between;
+}
+
+.cardDetalle .details .colorsSet ul li{
+list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+border: solid 1px #fff;
+padding: 0.6em;
+}
+
+.cardDetalle .details .colorsSet ul li:hover{
+    background-color: #fff;
+    color: #4ba9e9;
+}
+
+.cardDetalle .details .comprar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cardDetalle .details .comprar .precio{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.cardDetalle .details .comprar .btn{
+    background: #fff;
+    padding: 0.5em 0.8em;
+    text-transform: uppercase;
+}
+
+.cardDetalle .details .comprar .btn a{
+    text-decoration: none;
+    color: #4ba9e9;
+}
