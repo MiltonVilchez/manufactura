@@ -195,7 +195,7 @@ header .navCredenciales {
 .carta:first-child {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("/img/F1.jpg");
+            rgba(0, 0, 0, 0.5)), url("/img/seco.jpg");
 
 
 }
@@ -203,13 +203,13 @@ header .navCredenciales {
 .carta:nth-child(2) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("/img/F1.jpg");
+            rgba(0, 0, 0, 0.5)), url("/img/visos.jpg");
 }
 
 .carta:nth-child(3) {
     background-image: linear-gradient(0deg,
             rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.5)), url("/img/F1.jpg");
+            rgba(0, 0, 0, 0.5)), url("/img/ligero.webp");
 
 }
 
