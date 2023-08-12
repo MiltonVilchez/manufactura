@@ -2,8 +2,8 @@
 #accordion {
   display: flex;
   justify-content: space-between;
-  margin: 0 -15px;
-  overflow: hidden;
+  margin: 0 -15px; /* Agregado margen a los lados */
+  overflow: hidden; /* Evitar que el hover extienda el contenido */
 }
 
 #tab-mision,
@@ -11,11 +11,10 @@
   flex: 1;
   padding: 15px;
   border: 1px solid #ddd;
-  margin: 0 15px;
+  margin: 0 15px; /* Agregado margen a los lados */
   transition: background-color 0.3s, transform 0.3s;
-  text-align: center;
+  text-align: center; /* Centra el texto horizontalmente */
   cursor: pointer;
-  position: relative;
 }
 
 #tab-vision {
@@ -24,13 +23,8 @@
 
 #tab-mision:hover,
 #tab-vision:hover {
-  background-color: #f5f5f5;
-  transform: translateY(-5px);
-}
-
-/* Evitar que el hover se extienda fuera del contenedor */
-#accordion:hover {
-  overflow: hidden;
+  background-color: #f5f5f5; /* Cambiar el color al pasar el mouse */
+  transform: translateY(-5px); /* Efecto de elevación al pasar el mouse */
 }
 
 /* Estilos para centrar el título "Nosotros" y subtítulo */
@@ -47,25 +41,4 @@ article h3 {
 /* Agregar un padding inferior para la sección de Historia de la Empresa */
 article {
   padding-bottom: 30px;
-}
-
-/* Evitar desbordamiento horizontal */
-body {
-  overflow-x: hidden;
-}
-
-/* Alinear títulos de Misión y Visión con sus contenidos */
-#tab-mision h4,
-#tab-vision h4 {
-  margin: 0;
-  text-align: center;
-}
-
-/* Centrar contenido de Misión y Visión */
-#tab-mision .card-body,
-#tab-vision .card-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
 }
