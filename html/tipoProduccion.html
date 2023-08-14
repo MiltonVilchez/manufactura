@@ -16,26 +16,20 @@
   </head>
 
   <body>
+    
     <header>
       <div class="container">
-        <a class="logo" href="/index.html">Tabacalera</a>
+        <a class="logo" href="/index.html">
+          <img src="/img/logoAJ.png" alt="Tabacalera">
+        </a>
         <nav>
           <a href="/html/tipoProduccion.html">Sistema Produccion</a>
           <a href="/html/ind_manu_auto.html">Manufactura industrializada</a>
           <a href="/html/nosotros.html">Nosotros</a>
-          <input
-            type="text"
-            name="Buscar"
-            id="txtBuscar"
-            placeholder="Busque su producto"
-          />
-          <a class="navCredenciales" href="/html/registrarse.html"
-            >Registrarse</a
-          >
-          <a class="navCredenciales" href="/html/login.html">Iniciar Sesión</a>
         </nav>
       </div>
     </header>
+
     <section id="carrusel">
       <div class="slide">
         <div class="slide-inner">
@@ -49,7 +43,7 @@
             checked="checked"
           />
           <div class="slide-item">
-            <img src="/img/F4.jpg" />
+            <img src="/img/CARRUSEL1.jpg" />
           </div>
           <input
             class="slide-open"
@@ -60,7 +54,7 @@
             hidden=""
           />
           <div class="slide-item">
-            <img src="/img/F5.jpg" />
+            <img src="/img/CARRUSEL2.jpg" />
           </div>
           <input
             class="slide-open"
@@ -93,6 +87,13 @@
         </div>
       </div>
     </section>
+    <section id="hero">
+      <h1>EXPLORA NUESTRA MARCA</h1>
+      <form action="html/detalle.html">
+        <button>VER MÁS</button>
+      </form>
+    </section>
+    
 
     <section class="tipoProduccion">
       <div class="container">
@@ -175,31 +176,26 @@
     </section>
 
     <section id="containerCartas">
-        <div class="container">
-            <h2 class="efectoLinea">Tipos de Puros</h2>
-            <div class="containerInnerCartas">
-                <div class="carta">
-                    <div class="hoverArrow">
-                        <button>Seco</button>
-
-                    </div>
-
-                </div>
-                <div class="carta">
-                    <div class="hoverArrow">
-                        <button>Visos</button>
-                    </div>
-
-                </div>
-                <div class="carta">
-                    <div class="hoverArrow">
-
-                        <button>Ligero</button>
-                    </div>
-
-                </div>
+      <div class="container">
+        <h2 class="efectoLinea">Tipos de Puros</h2>
+        <div class="containerInnerCartas">
+          <div class="carta">
+            <div class="hoverArrow">
+              <button>Seco</button>
             </div>
+          </div>
+          <div class="carta">
+            <div class="hoverArrow">
+              <button>Visos</button>
+            </div>
+          </div>
+          <div class="carta">
+            <div class="hoverArrow">
+              <button>Ligero</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <footer class="pieDePagina">
@@ -231,9 +227,7 @@
         </div>
       </div>
       <div class="grupo-2">
-        <small
-          >&copy; 2022 Tabacalera - Todos los Derechos Reservados.</small
-        >
+        <small>&copy; 2022 Tabacalera - Todos los Derechos Reservados.</small>
       </div>
     </footer>
   </body>
