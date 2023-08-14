@@ -178,7 +178,6 @@ header .navCredenciales {
   width: 2vw;
   height: 5px;
   background-color: rgb(255, 255, 255);
-  
 }
 
 .efectoLinea::before {
@@ -207,14 +206,32 @@ header .navCredenciales {
   display: none;
 }
 
-#containerCartas .carta {
+/*#containerCartas .carta {
   background-position: center center;
   background-size: cover;
   padding: 100px 0px;
   margin: 30px;
   border-radius: 15px;
   cursor: pointer;
-}
+}*/
+
+#containerCartas .containerInnerCartas {
+    display: flex;
+    justify-content: space-between; /* Distribuye el espacio entre las cartas */
+    flex-wrap: wrap; /* Envuelve a las cartas en caso de que el espacio no sea suficiente */
+    margin-top: 50px; /* Agrega espacio arriba del contenedor de las cartas */
+  }
+  
+  #containerCartas .carta {
+    flex-basis: calc(25% + 100px); /* Distribuye el espacio entre las cartas, restando el margen */
+    background-position: center center;
+    background-size: cover;
+    padding: 100px 0px;
+    margin: 0 -100px; /* Margen horizontal entre las cartas */
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+  }
 
 .carta:first-child {
   background-image: linear-gradient(
