@@ -1,109 +1,125 @@
-
+.tipoProduccion {
+  margin: 50px 0;
+}
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .col-md-6 {
-    width: calc(50% - 20px);
-    margin: 0 10px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: stretch;
+  width: calc(50% - 20px);
+  margin: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: stretch;
 }
 
 /* Estilos para la columna de texto */
 .texto {
-    flex: 1;
-    padding: 20px;
-    background-color: #f2f2f2;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url("/img/visos.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .texto h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
+  font-family: "Montserrat", Sans-serif;
+  justify-content: center;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
 }
 
 .texto p {
-    font-size: 18px;
-    line-height: 1.6;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: white;
 }
 
 /* Estilos para la columna de imagen */
 .imagen {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .imagen img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 5px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
 }
 
 /* Estilos para el diagrama */
 .diagrama {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-    width: 80%;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .fila {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
 .paso {
-    text-align: center;
-    padding: 10px;
-    background-color: #FFC107;
-    border-radius: 50%;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    width: 150px;
-    height: 150px;
-    margin: 0 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  text-align: center;
+  padding: 10px;
+  background-color: #ffc107;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 150px;
+  height: 150px;
+  margin: 0 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .numero {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .contenido {
-    font-size: 14px;
-    line-height: 18px;
+  font-size: 14px;
+  line-height: 18px;
 }
 
 .paso:not(:last-child)::after {
-    content: "";
-    width: 40px;
-    height: 2px;
-    background-color: #ccc;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 100%;
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100%;
 }
 
 .paso:last-child::after {
-    display: none;
+  display: none;
 }
