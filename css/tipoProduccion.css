@@ -16,6 +16,24 @@
 }
 
 /* Estilos para la columna de texto */
+.textoprocesoInfraestructura {
+  flex: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("/img/Cafe.jpg");
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+}
 .textoAntecedente {
   flex: 1;
   padding: 20px;
@@ -72,7 +90,7 @@
   margin: 0;
 }
 
-.texto h2 ,.textoprocesoProductivo h2 , .textoAntecedente h2{
+.texto h2 ,.textoprocesoProductivo h2 , .textoAntecedente h2,.textoprocesoInfraestructura h2{
   font-family: "Montserrat", Sans-serif;
   justify-content: center;
   text-align: center;
@@ -84,7 +102,7 @@
   margin-bottom: 30px;
 }
 
-.texto p ,.textoprocesoProductivo p , .textoAntecedente p{
+.texto p ,.textoprocesoProductivo p , .textoAntecedente p,.textoprocesoInfraestructura p{
   font-family: "Montserrat", Sans-serif;
   font-size: 20px;
   line-height: 1.6;
